@@ -1,18 +1,10 @@
-var a = prompt('Podaj wartosc dla a');
-	var h = prompt('Podaj wartosc dla h');
-		var value = a*h/2;
-			var triangle1Area = getTriangleArea(10, 15);
+var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+	var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+		var allNames = femaleNames.concat(maleNames);
+			var newName ='Marian'
 
-		function getTriangleArea(a, h) {
-	if (a <= 0) {
+console.log(allNames);
 
-			console.log('Nieprawidłowe dane.');
-
-	} else if (h <= 0) {
-
-			console.log('Nieprawidłowe dane.');
-
-    return value;
+if (allNames.indexOf(newName) === -1) {
+ 	allNames.push('Marian');
 }
-
-console.log( getTriangleArea(10,6) )
