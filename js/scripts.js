@@ -1,24 +1,18 @@
-<<<<<<< Updated upstream
-var name = prompt('Wpisz swoje imię');
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
-=======
 var a = prompt('Podaj wartosc dla a');
-	var b = prompt('Podaj wartosc dla b');
-		var value = (a * a) + (2 * a * b) - (b * b);
+	var h = prompt('Podaj wartosc dla h');
+		var value = a*h/2;
+			var triangle1Area = getTriangleArea(10, 15);
 
-console.log('Wynik działania wynosi: ' + value);
+		function getTriangleArea(a, h) {
+	if (a <= 0) {
 
-if (value > 0) {
+			console.log('Nieprawidłowe dane.');
 
-    console.log('Wynik działania jest dodatni.');
+	} else if (h <= 0) {
 
-} else if (value < 0) {
+			console.log('Nieprawidłowe dane.');
 
-    console.log('Wynik działania jest ujemny.');
-} else {
-
-    console.log('Wynik działania jest równy 0.');
-
+    return value;
 }
->>>>>>> Stashed changes
+
+console.log( getTriangleArea(10,6) )
