@@ -1,14 +1,9 @@
-function drawTree(h) {
+var withButtonsClass = document.getElementsByClassName('button');
 
-for ( var i = 1 ; i <= h ; i++)
+console.log(withButtonsClass);
+
+
+for (var i = 0 ; i < withButtonsClass.length ; i++)
 {
-		var star = '';
-		for ( var j = 1 ; j < i*2-1 ; j++)
-		{
-			star += '*';
-		}
-		console.log(star)
+  console.log(withButtonsClass.innertext);
 }
-}
-
-drawTree(5);
