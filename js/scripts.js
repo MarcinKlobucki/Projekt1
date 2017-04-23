@@ -1,9 +1,11 @@
-var withButtonsClass = document.getElementsByClassName('button');
+var list = document.getElementById('list'),
+      add = document.getElementById('addElem');
+        itemsByTagName = document.getElementsByTagName('li');
 
-console.log(withButtonsClass);
+add.addEventListener('click', function(e) {
 
+  list.innerHTML += '<li>item  + itemsByTagName.lenght</li>';
 
-for (var i = 0 ; i < withButtonsClass.length ; i++)
-{
-  console.log(withButtonsClass[i].innerText);
-}
+  console.log(itemsByTagName);
+
+});
